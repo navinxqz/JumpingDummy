@@ -6,6 +6,7 @@ public class HippoScript : MonoBehaviour
     public float flapStrength;
     public LogicScript logicScript;
     public bool hippoIsAlive = true;
+    public AudioSource warningAudio;
 
     void Start()
     {
@@ -18,7 +19,13 @@ public class HippoScript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space) && hippoIsAlive)
         { rb.linearVelocity = Vector2.up * flapStrength; }
-            
+
+        if(transform.position.y >= 21 || transform.position.y <= -20)
+        {
+            logicScript.GameOver();
+            hippoIsAlive = false;
+        }
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

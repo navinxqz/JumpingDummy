@@ -132,7 +132,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.98, y: 2.42}
+  m_Size: {x: 0.66, y: 2.27}
   m_EdgeRadius: 0
 --- !u!1 &1507352620967411670
 GameObject:
@@ -266,7 +266,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.76, y: 2.33}
+  m_Size: {x: 0.57, y: 2.23}
   m_EdgeRadius: 0
 --- !u!1 &2099293759334436422
 GameObject:
@@ -407,5 +407,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c10fa58733fa104d9d9c83e7969ab6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 8
   destroyer: -60
